@@ -48,7 +48,7 @@ const HeroSection = styled.section`
     background-image: url("./images/hero-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 88vh;
+    height: 90vh;
 
         .hero-section-container{
             display: flex;
