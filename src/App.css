@@ -18,7 +18,7 @@
   /* Font size */
   --fs-0-8: .8rem;
   --fs-1: 1rem;
-  --fs-1-5: 1.5rem;
+  --fs-1-2: 1.2rem;
   --fs-2: 2rem;
   --fs-3: 3rem;
   --fs-4: 4rem;
@@ -35,7 +35,7 @@
   --br-bottom: 0 0 10px 10px;
 
   /* Box shadow */
-  --bx-shadow: ;
+  --bx-shadow-bottom: rgba(50, 50, 93, 0.25) 0px 50px 50px -20px, rgba(0, 0, 0, 1) 0px 30px 30px -30px;
 }
 
 /* Scroll bar */

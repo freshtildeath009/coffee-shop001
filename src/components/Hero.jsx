@@ -48,7 +48,7 @@ const HeroSection = styled.section`
     background-image: url("./images/hero-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
 
         .hero-section-container{
             display: flex;
@@ -58,7 +58,8 @@ const HeroSection = styled.section`
             background: rgb(0, 0, 0, 0.5);
             margin: 5rem 5rem;
             padding: 3rem 3rem;
-            border-radius: var(--br-general);  
+            border-radius: var(--br-general);
+            
         }
 
         .hero-section-container .hero-left-container{
