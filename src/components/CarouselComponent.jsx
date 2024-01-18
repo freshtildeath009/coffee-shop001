@@ -42,6 +42,7 @@ const CarouselSection = styled.section`
         max-height: 600px;
         width: 100vw;
         object-fit: cover;
+        border-radius: var(--br-general);
     }
 
     h3{
