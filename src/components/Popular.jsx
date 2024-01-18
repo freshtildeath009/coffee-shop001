@@ -234,7 +234,6 @@ const PopularSection = styled.section`
             .popular-bottom-container{
                 gap: 3.7rem 0rem;
                 width: 100%;
-                border: 1px solid green;
             }
 
             .popular-bottom-container .card-container{
