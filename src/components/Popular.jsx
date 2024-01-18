@@ -101,6 +101,7 @@ const PopularSection = styled.section`
     flex-direction: column;
     box-shadow: var(--bx-shadow-top);
     border-radius: var(--br-top);
+    overflow: hidden;
 
         .popular-section{
             margin: 5rem 5rem;
@@ -144,8 +145,8 @@ const PopularSection = styled.section`
             width: 350px;
             min-width: 240px;
             border-radius: var(--br-general);
-            overflow: hidden;
             transition: ease 0.5s;
+            overflow: hidden;
         }
 
         
@@ -233,6 +234,7 @@ const PopularSection = styled.section`
             .popular-bottom-container{
                 gap: 3.7rem 0rem;
                 width: 100%;
+                border: 1px solid green;
             }
 
             .popular-bottom-container .card-container{
@@ -241,8 +243,7 @@ const PopularSection = styled.section`
      
 
             .popular-bottom-container .card-container img{
-                height: 100px;
-                width: 100%;
+                height: 0;
             }
 
     
@@ -256,11 +257,30 @@ const PopularSection = styled.section`
             .popular-top-container h1{
                 font-size: calc(1.5rem + 2vw);
             }
+
+            .card-container .card-info-container{
+                width: 70%;
+            }
+
+            .card-container .card-info-container div{
+                font-size: var(--fs-1);
+                
+            }
+
+            .card-container .card-info-container h4{
+                font-size: var(--fs-0-8);
+            }
+    
+
         }
 
-        @media (max-width: 320px){
+        @media (max-width: 300px){
             .popular-section{
                 margin: 5rem 1rem;
+            }
+
+            .popular-bottom-container .card-container{
+                margin: 0 1rem;
             }
         }
 `
