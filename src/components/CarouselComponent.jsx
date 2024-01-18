@@ -54,4 +54,11 @@ const CarouselSection = styled.section`
         font-family: var(--fs-paragraph);
         font-weight: var(--fw-400);
     }
+
+    @media (max-width: 568px) {
+        img{
+            min-height: 500px;
+            object-fit: cover;
+        }
+    }
 `

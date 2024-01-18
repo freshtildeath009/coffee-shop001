@@ -41,8 +41,7 @@ const ServicesSection = styled.section`
     justify-content: center;
     align-items: center;
     margin: 5rem 5rem;
-    gap: 1rem 5.5rem;
-    flex-wrap: wrap;
+    gap: 2rem 2rem;
 
         .services-card-container{
             display: flex;
@@ -50,8 +49,8 @@ const ServicesSection = styled.section`
             align-items: center;
             flex-direction: column;
             text-align: center;
-            max-width: 320px;
-            min-width: 320px;
+            width: 600px;
+            min-width: 250px;
             padding: 2rem 1rem;
             background: var(--clr-300);
             border-radius: var(--br-general);
@@ -77,21 +76,59 @@ const ServicesSection = styled.section`
             padding: 0.3rem 3rem;
         }
 
-        @media (max-width: 981px){
+        @media (max-width: 1210px){
             .services-card-container{
-                max-width: 500px;
+                width: 445px;
             }
         }
 
-        @media (max-width: 368px){
+        @media only screen and (max-width: 1100px){
+            flex-wrap: wrap;
             .services-card-container{
-                min-width: 300px;
+                padding: 3rem 2rem;
+                width: 600px;
             }
         }
-        @media (max-width: 320px){
+
+
+        @media (max-width: 898px) {
             .services-card-container{
-                min-width: 280px;
+                padding: 3rem 2rem;
+                width: 590px;
+            }
+        }
+
+        @media only screen and (max-width: 768px){
+            margin: 5rem 3rem;
+            .services-card-container{
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 568px){
+            margin: 5rem 2rem;
+
+            .services-card-container h3{
+                font-family: var(--ff-header);
+                font-size: var(--fs-1-2);
+                font-weight: var(--fw-600);
+                color: var(--clr-100);
             }
     
+            .services-card-container p{
+                font-family: var(--ff-paragraph);
+                font-weight: var(--fw-300);
+                font-size: var(--fs-1);
+                color: var(--clr-200);
+            }
+        }
+
+        @media only screen and (max-width: 420px){
+            .services-card-container{
+                padding: 2rem 1rem;
+                width: 550px;
+            }        
+        @media only screen and (max-width: 320px){
+            margin: 5rem 1rem;
         }
 `

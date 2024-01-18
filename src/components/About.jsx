@@ -51,7 +51,7 @@ const AboutSection = styled.section`
         }
 
         .about-top-container h1{
-            font-size: calc(1rem + 3vw);
+            font-size: calc(2.3rem + 2vw);
             font-family: var(--ff-header);
         }
 
@@ -92,6 +92,10 @@ const AboutSection = styled.section`
 
         @media (max-width: 568px){
             margin: 0 2rem 3rem 2rem;
+
+            .about-top-container h1{
+                font-size: calc(1.5rem + 2vw);
+            }
         }
 
         @media (max-width: 320px){

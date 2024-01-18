@@ -36,6 +36,7 @@
 
   /* Box shadow */
   --bx-shadow-bottom: rgba(50, 50, 93, 0.25) 0px 50px 50px -20px, rgba(0, 0, 0, 1) 0px 30px 30px -30px;
+  --bx-shadow-top: 0px -10px 20px rgba(50, 50, 50, 0.7);
 }
 
 /* Scroll bar */

@@ -56,10 +56,10 @@ const HeroSection = styled.section`
             align-items: center;
             width: 100%;
             background: rgb(0, 0, 0, 0.5);
-            margin: 5rem 5rem;
-            padding: 3rem 3rem;
+            margin: 0rem 5rem;
+            padding: 1rem 3rem 0 3rem;
             border-radius: var(--br-general);
-            
+            overflow: hidden;
         }
 
         .hero-section-container .hero-left-container{
@@ -238,6 +238,7 @@ const HeroSection = styled.section`
 
             .hero-section-container{
                 flex-direction: column;
+                margin: 5rem 3rem;
                 padding: 3rem 0rem;
                 gap: 2rem;
             }
@@ -295,6 +296,7 @@ const HeroSection = styled.section`
         }
 
         @media (max-width: 768px) {
+            background-position: center;
             .hero-section-container{
                 margin: 5rem 3rem;
                 flex-direction: column;
@@ -429,11 +431,11 @@ const HeroSection = styled.section`
 
         @media (max-width: 468px) {
             .hero-section-container .hero-left-container h2{
-                font-size: calc(1.5rem + 2vw);
+                font-size: calc(1.7rem + 2vw);
             }
 
             .hero-section-container .hero-left-container h1{
-                font-size: calc(1rem + 2vw);
+                font-size: calc(1.2rem + 2vw);
             }
 
             .hero-right-container  {
@@ -466,11 +468,11 @@ const HeroSection = styled.section`
 
         @media (max-width: 450px) {
             .hero-section-container .hero-left-container h2{
-                font-size: calc(1.5rem + 2vw);
+                font-size: calc(1.7rem + 2vw);
             }
 
             .hero-section-container .hero-left-container h1{
-                font-size: calc(1rem + 2vw);
+                font-size: calc(1.2rem + 2vw);
             }
 
             .hero-right-container  {
@@ -503,22 +505,22 @@ const HeroSection = styled.section`
 
         @media (max-width: 430px) {
             .hero-section-container .hero-left-container h2{
-                font-size: calc(1.2rem + 2vw);
+                font-size: calc(1.7rem + 2vw);
             }
 
             .hero-section-container .hero-left-container h1{
-                font-size: calc(0.8rem + 2vw);
+                font-size: calc(1.2rem + 2vw);
             }
         }
         
 
         @media (max-width: 400px) {
             .hero-section-container .hero-left-container h2{
-                font-size: calc(1rem + 2vw);
+                font-size: calc(1.3rem + 2vw);
             }
 
             .hero-section-container .hero-left-container h1{
-                font-size: calc(0.6rem + 2vw);
+                font-size: calc(1rem + 2vw);
             }
 
             .hero-right-container  {

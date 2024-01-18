@@ -29,9 +29,9 @@ export default Header
 const HeaderNav = styled.nav`
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100px;
-    background-color: var(--clr-300);
+    // align-items: center;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.9);
     font-family: var(--ff-header);
 
         .nav-container{
@@ -39,12 +39,12 @@ const HeaderNav = styled.nav`
             justify-content: space-between;
             background-color: var(--clr-300);
             align-items: center;
-            width: 100%;
             height: 100px;
+            width: 100%;
             position: fixed;
             z-index: 1000;
             border-radius: var(--br-bottom);
-            opacity: .950;
+            opacity: .9;
         }
 
         .nav-container .nav-left-container h3{
@@ -84,7 +84,6 @@ const HeaderNav = styled.nav`
 
         @media(max-width: 992px){
             height: 70px;
-
             .nav-container{
                 height: 70px;
             }

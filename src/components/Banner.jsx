@@ -5,17 +5,20 @@ const Banner = () => {
     return (
         <>
             <BannerSection>
-                {/* <div className='bars'>
+                <div className='bars'>
                     <div></div>
                     <div></div>
                     <div></div>
-                </div> */}
-                <h2><span>50%</span> off your favorite coffee</h2>
-                {/* <div className='bars'>
+                </div>
+                <div className='banner-text'>
+                    <h2><span>50%</span> off your <br className='br' /> favorite coffee</h2>
+                </div>
+
+                <div className='bars'>
                     <div></div>
                     <div></div>
                     <div></div>
-                </div> */}
+                </div>
             </BannerSection>
         </>
     )
@@ -33,6 +36,9 @@ const BannerSection = styled.section`
     background-color: var(--clr-300);
     border-radius: var(--br-bottom);
     box-shadow: var(--bx-shadow-bottom);
+    position: relative;
+    overflow: hidden;
+    
         
         .bars {
             display: flex;
@@ -53,9 +59,15 @@ const BannerSection = styled.section`
             left: 50px; 
         }
 
-      
+        .banner-text{
+            z-index: 1;
+        }
+
+        .br{
+            display: none;
+        }
         h2{
-            font-size: calc(0.7rem + 2vw);
+            font-size: calc(1rem + 2vw);
             color: var(--clr-200);
         }
 
@@ -63,10 +75,15 @@ const BannerSection = styled.section`
             color: var(--clr-100);
         }
 
-        @media (max-width: 992px){
-            .bars div{
-                clip-path: polygon(80% 0, 100% 0, 55% 100%, 35% 100%);
-                width: 100px;
+        @media (max-width: 668px){
+            .banner-text{
+                // position: absolute;
+                white-space: nowrap;
+                margin: 0 2rem;
+            }
+
+            .br{
+                display: block;
             }
         }
 `
