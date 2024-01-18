@@ -45,7 +45,7 @@ const ServicesSection = styled.section`
 
         .services-card-container{
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             flex-direction: column;
             text-align: center;
