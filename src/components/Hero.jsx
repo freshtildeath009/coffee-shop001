@@ -119,7 +119,7 @@ const HeroSection = styled.section`
 
         .hero-right-container .image-container:hover{
             z-index: 1;
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
 
         .hero-right-container .image-container:nth-child(1){

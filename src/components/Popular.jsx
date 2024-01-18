@@ -151,7 +151,7 @@ const PopularSection = styled.section`
         
 
         .popular-bottom-container img:hover{
-            transform: scale(1.2);
+            transform: scale(1.09);
         }
 
         .card-container .card-info-container{
@@ -245,9 +245,7 @@ const PopularSection = styled.section`
                 width: 100%;
             }
 
-            .popular-bottom-container img:hover{
-                transform: scale(1.1);
-            }
+    
         }
 
         @media (max-width: 568px){

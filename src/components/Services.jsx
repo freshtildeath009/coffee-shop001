@@ -54,7 +54,13 @@ const ServicesSection = styled.section`
             padding: 2rem 1rem;
             background: var(--clr-300);
             border-radius: var(--br-general);
+            transition: ease .5s;
+            overflow: hidden;
+        }
+
+        .services-card-container:hover{
             box-shadow: var(--bx-shadow-bottom);
+            transform: scale(1.09);
         }
 
         .services-card-container h3{

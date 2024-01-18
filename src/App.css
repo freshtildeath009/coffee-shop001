@@ -11,7 +11,7 @@
   --clr-300: #000000;
 
   /* Font family */
-  --ff-cursive: ff-brenson;
+  --ff-cursive: "Sonsie One", system-ui;
   --ff-header: "Rowdies", sans-serif;
   --ff-paragraph: cursive;
 
