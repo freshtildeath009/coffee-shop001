@@ -8,13 +8,14 @@ const Header = () => {
             <HeaderNav>
                 <div className='nav-container'>
                     <div className='scroll-watcher'></div>
+
                     <div className='nav-left-container'>
                         <h3>KOPI</h3>
                     </div>
                     <div className='nav-right-container'>
                         <Link to="/">HOME</Link>
                         <a href="#">PAGES <i className="fa-solid fa-angle-down"></i></a>
-                        <Link to="/product">PRODUCT</Link>
+                        <Link to="/products">PRODUCT</Link>
                         <Link to="/contact">CONTACT</Link>
                     </div>
                     <div className='nav-right-menu-container'>
@@ -84,7 +85,7 @@ const HeaderNav = styled.nav`
         }
 
         .scroll-watcher {
-            height: 1px;
+            height: 3px;
             width: 100%;
             background: var(--clr-100);
             position: fixed;
