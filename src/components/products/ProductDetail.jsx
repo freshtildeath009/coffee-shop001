@@ -5,8 +5,6 @@ const ProductDetail = (props) => {
     const { item } = props
     return (
         <>
-
-
             <ProductDetailDiv>
                 <div className='product-detail-left-container'>
                     <img src={`.${item.image}`} alt="" />
