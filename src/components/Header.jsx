@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Header = () => {
@@ -6,14 +7,15 @@ const Header = () => {
         <>
             <HeaderNav>
                 <div className='nav-container'>
+                    <div className='scroll-watcher'></div>
                     <div className='nav-left-container'>
                         <h3>KOPI</h3>
                     </div>
                     <div className='nav-right-container'>
-                        <a href="">HOME</a>
-                        <a href="">SERVICES</a>
-                        <a href="">PRODUCT</a>
-                        <a href="">CONTACT</a>
+                        <Link to="/">HOME</Link>
+                        <a href="#">PAGES <i className="fa-solid fa-angle-down"></i></a>
+                        <Link to="/product">PRODUCT</Link>
+                        <Link to="/contact">CONTACT</Link>
                     </div>
                     <div className='nav-right-menu-container'>
                         <i className="fa-solid fa-bars"></i>
@@ -42,7 +44,7 @@ const HeaderNav = styled.nav`
             height: 100px;
             width: 100%;
             position: fixed;
-            z-index: 1000;
+            z-index: 2;
             border-radius: var(--br-bottom);
             opacity: .9;
         }
@@ -75,11 +77,26 @@ const HeaderNav = styled.nav`
             color: var(--clr-200);
         }
 
-
         .nav-left-container,
         .nav-right-container,
         .nav-container .nav-right-menu-container{
             margin: 0 5rem;
+        }
+
+        .scroll-watcher {
+            height: 1px;
+            width: 100%;
+            background: var(--clr-100);
+            position: fixed;
+            top: 0;
+            scale: 0 1;
+            animation: scroll-watcher linear;
+            animation-timeline: scroll();
+            transform-origin: left;
+        } 
+
+        @keyframes scroll-watcher {
+            to { scale: 1 1; }
         }
 
         @media(max-width: 992px){
