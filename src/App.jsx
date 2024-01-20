@@ -6,7 +6,7 @@ import Header from './components/Header';
 // Pages routes
 
 
-import Product from './components/products/Product';
+import ProductItem from './components/products/ProductItem';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Products from './pages/Products';
@@ -22,8 +22,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/products' element={<Products />} />
-          <Route path='/product' element={<Product />} >
-            <Route path=':id' element={<Product />} />
+          <Route path='/product' element={<ProductItem />} >
+            <Route path=':id' element={<ProductItem />} />
           </Route>
         </Routes>
         <Footer />

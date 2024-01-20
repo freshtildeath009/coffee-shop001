@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { ShopContext } from '../../context/context'
 import ProductDetail from './productDetail'
 
-const Product = () => {
+const ProductItem = () => {
     const { productData } = useContext(ShopContext)
     const { id } = useParams()
     const product = productData?.find(item => item.id === Number(id))
@@ -15,4 +15,4 @@ const Product = () => {
     )
 }
 
-export default Product
+export default ProductItem
