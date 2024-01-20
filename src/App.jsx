@@ -5,7 +5,8 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 // Pages routes
 
-import Product from './components/products/product';
+
+import Product from './components/products/Product';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Products from './pages/Products';
