@@ -17,7 +17,6 @@ const ProductDetail = (props) => {
                     <h4>{item.category}</h4>
                     <p>{item.description}</p>
                 </div>
-
             </ProductDetailDiv>
 
 
