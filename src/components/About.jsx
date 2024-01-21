@@ -84,6 +84,7 @@ const AboutSection = styled.section`
         .about-top-container .about-top-links-container h4 i{
             color: var(--clr-100);
             font-size: var(--fs-1-2);
+            color: var(--clr-200);
         }
 
         @media (max-width: 768px){

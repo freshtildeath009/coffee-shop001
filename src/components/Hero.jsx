@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Button from './Button'
 
@@ -14,7 +15,7 @@ const Hero = () => {
                         <h1>BEFORE COFFEE</h1>
                         <div className='hero-left-button-container'>
                             <Button text="Book a table" />
-                            <Button text="Shop now" />
+                            <Link to="/products"><Button text="Shop now" /></Link>
                         </div>
                     </div>
 

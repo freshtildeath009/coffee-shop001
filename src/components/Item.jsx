@@ -51,6 +51,7 @@ const Card = styled.div`
             position: absolute;
             bottom: -25px;
             border: solid 1px var(--clr-300);
+
         }
 
         .card .card-bottom-container h3:nth-child(1) {

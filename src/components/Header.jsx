@@ -1,25 +1,45 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Header = () => {
+    const [showPagesMenu, setShowPagesMenu] = useState(false)
+
+    const [addColorHome, setAddColorHome] = useState(true)
+    const [addColorProduct, setAddColorProduct] = useState(false)
+    const [addColorContact, setAddColorContact] = useState(false)
+    const [addColorBooking, setAddColorBooking] = useState(false)
+    const [addColorAbout, setAddColorAbout] = useState(false)
+
+    const _handleShowPagesMenu = () => {
+        setShowPagesMenu(!showPagesMenu)
+        const navPagesMenu = document.querySelector(".nav-pages-menu")
+        navPagesMenu.style.display = showPagesMenu ? "flex" : "none"
+    }
+
+    const activeLink = "activeLink"
+    const normalLink = "normalLink"
     return (
         <>
             <HeaderNav>
-                <div className='nav-container'>
+                <div className='nav-container' >
                     <div className='scroll-watcher'></div>
 
                     <div className='nav-left-container'>
                         <h3>KOPI</h3>
                     </div>
                     <div className='nav-right-container'>
-                        <Link to="/">HOME</Link>
-                        <a href="#">PAGES <i className="fa-solid fa-angle-down"></i></a>
-                        <Link to="/products">PRODUCT</Link>
-                        <Link to="/contact">CONTACT</Link>
+                        <NavLink className={({ isActive }) => (isActive ? activeLink : normalLink)} to="/" >HOME</NavLink>
+                        <a href="#" onClick={_handleShowPagesMenu}>PAGES <i className="fa-solid fa-angle-down"></i></a>
+                        <NavLink className={({ isActive }) => (isActive ? activeLink : normalLink)} to="/products" >PRODUCT</NavLink>
+                        <NavLink className={({ isActive }) => (isActive ? activeLink : normalLink)} to="/contact" >CONTACT</NavLink>
                     </div>
                     <div className='nav-right-menu-container'>
                         <i className="fa-solid fa-bars"></i>
+                    </div>
+                    <div className='nav-pages-menu'>
+                        <NavLink className={({ isActive }) => (isActive ? activeLink : normalLink)} to="/booking" >BOOKING</NavLink>
+                        <NavLink className={({ isActive }) => (isActive ? activeLink : normalLink)} to="/about" href="" >ABOUT</NavLink>
                     </div>
                 </div>
             </HeaderNav>
@@ -32,11 +52,18 @@ export default Header
 const HeaderNav = styled.nav`
     display: flex;
     justify-content: center;
-    // align-items: center;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.9);
     font-family: var(--ff-header);
 
+    
+       .nav-container .nav-right-container a.activeLink{
+        color: var(--clr-100);
+        }
+
+        .nav-container .nav-right-container a.normalLink{
+            color: var(--clr-200);
+            }
         .nav-container{
             display: flex;
             justify-content: space-between;
@@ -48,6 +75,44 @@ const HeaderNav = styled.nav`
             z-index: 2;
             border-radius: var(--br-bottom);
             opacity: .9;
+            
+        }
+
+
+        .nav-pages-menu{
+            display: none;
+            border-radius: var(--br-bottom);
+            flex-direction: column;
+            margin-top: 6.2rem;
+            position: fixed;
+            background: var(--clr-300);
+            top: 0;
+            right: 300px;
+            overflow: hidden;
+        }
+
+        .link.active {
+            color: var(--clr-100);
+        }
+        .nav-pages-menu a{
+            font-family: var(--ff-header);
+            font-size: var(--fs-1);
+            color: var(--clr-200);
+            padding: 1rem 2rem;
+            background: var(--clr-300);
+            border-bottom: solid 2px var(--clr-300);
+        }
+
+        .nav-pages-menu a.activeLink{
+            color: var(--clr-100);
+        }
+
+        .nav-pages-menu a.normalLink{
+            color: var(--clr-200);
+        }
+
+        .nav-pages-menu a:hover{
+            border-bottom: solid 2px var(--clr-100);
         }
 
         .nav-container .nav-left-container h3{
@@ -63,9 +128,10 @@ const HeaderNav = styled.nav`
             padding: 1rem 1.2rem;
         }
 
-        .nav-container .nav-right-container a:nth-child(1){
-            color: var(--clr-100);
-        }
+        // .nav-container .nav-right-container a.active{
+        //     color: var(--clr-100);
+        // }
+
 
         .nav-container .nav-right-container a:hover{
             color: var(--clr-100);

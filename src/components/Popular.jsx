@@ -79,7 +79,10 @@ const PopularSection = styled.section`
         }
         @media (max-width: 568px) {
             padding: 5rem 2rem;
-
+            
+            h1{
+                font-size: calc(1.5rem + 2vw);
+            }
         }
 
         @media (max-width: 320px) {

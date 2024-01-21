@@ -48,12 +48,14 @@ const CarouselSection = styled.section`
     h3{
         font-size: calc(0.8rem + 2vw);
         font-family: var(--ff-header);
+        color: var(--clr-200);
     }
 
     p{
         font-size: var(--fs-1);
         font-family: var(--fs-paragraph);
         font-weight: var(--fw-400);
+        color: var(--clr-200);
     }
 
     @media (max-width: 568px) {

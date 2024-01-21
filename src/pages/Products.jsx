@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import styled from 'styled-components'
+import HeroAll from '../components/HeroAll'
 import Item from '../components/Item'
 import { ShopContext } from '../context/context'
 
@@ -44,7 +45,14 @@ const Products = () => {
     }
     return (
         <>
+            <ProductHeroSection>
+                <HeroAll title="Products" />
+            </ProductHeroSection>
             <ProductsArticle>
+                <div className='category-top-container'>
+                    <h3>Our Menu</h3>
+                    <h1>Have a great day</h1>
+                </div>
                 <div className='category-button-container'>
                     <button onClick={_handleShowCoffee}>Coffee</button>
                     <button onClick={_handleShowMainDish}>Main Dish</button>
@@ -78,10 +86,18 @@ const ProductsArticle = styled.article`
     align-items: center;
     text-align: center;
     flex-direction: column;
-    margin: 5rem 5rem 3rem 5rem;
+    margin: 5rem 5rem 5rem 5rem;
 
-        .category-button-container{
-            
+        .category-top-container h3{
+            font-family: var(--ff-cursive);
+            text-align: center;
+            font-size: calc(var(--fs-1) + 1.5vw);
+            color: var(--clr-100);
+        }
+        .category-top-container h1{
+            font-family: var(--ff-header);
+            text-align: center;
+            font-size: calc(2.3rem + 2vw);
         }
         .category-button-container button{ 
             border: 2px solid var(--clr-300);
@@ -109,5 +125,13 @@ const ProductsArticle = styled.article`
         }
         @media (max-width: 320px) {
             margin: 5rem 1rem 3rem 1rem;
+
+            .category-top-container h1{
+                font-size: calc(1.5rem + 2vw);
+            }
         }
+`
+
+const ProductHeroSection = styled.section`
+       
 `

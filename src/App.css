@@ -7,8 +7,9 @@
 
   /* Color */
   --clr-100: #E18700;
-  --clr-200: #EEF1F3;
+  --clr-200: #eef1f3c9;
   --clr-300: hsl(0, 0%, 0%);
+  --clr-350: hsla(0, 0%, 20%, 0.61);
 
   /* Font family */
   --ff-cursive: "Sonsie One", system-ui;
