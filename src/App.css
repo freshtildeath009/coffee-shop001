@@ -14,7 +14,8 @@
   /* Font family */
   --ff-cursive: "Sonsie One", system-ui;
   --ff-header: "Rowdies", sans-serif;
-  --ff-paragraph: cursive;
+  --ff-paragraph: "Poppins", sans-serif;
+  ;
 
   /* Font size */
   --fs-0-8: .8rem;
