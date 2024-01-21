@@ -89,11 +89,11 @@ const HeroSection = styled.section`
             margin-top: 1rem;
         }
 
-        .hero-left-button-container{
-            display: flex;
-            gap: 1rem;
-            width: 300px;
-        }
+        // .hero-left-button-container{
+        //     display: flex;
+        //     gap: 1rem;
+        //     width: 300px;
+        // }
 
         .hero-left-button-container button:nth-child(2){
             background: none;
@@ -257,6 +257,11 @@ const HeroSection = styled.section`
 
             .hero-section-container .hero-left-container h1{
                 font-size: calc(0.6rem + 3vw);
+            }
+
+            .hero-left-button-container{
+                flex-direction: column;
+                text-align: center;
             }
 
             .hero-right-container  {
